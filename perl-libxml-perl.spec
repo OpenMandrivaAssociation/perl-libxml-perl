@@ -10,7 +10,6 @@ License:	Artistic
 Group:		Development/Perl
 Source0:	%{module}-%{version}.tar.bz2
 Url:		http://www.cpan.org
-BuildRoot:	%{_tmppath}/%{name}-buildroot/
 Requires:	perl perl-XML-Parser
 BuildRequires:	perl-devel perl-XML-Parser
 BuildArch:	noarch
