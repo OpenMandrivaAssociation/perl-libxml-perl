@@ -1,6 +1,6 @@
 %define module	libxml-perl
 %define version 0.08
-%define release %mkrel 2
+%define release %mkrel 3
 
 Summary:	Various perl modules and script for working with XML
 Name:		perl-%{module}
