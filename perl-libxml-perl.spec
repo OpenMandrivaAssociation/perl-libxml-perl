@@ -1,27 +1,28 @@
-%define module	libxml-perl
-%define version 0.08
-%define release %mkrel 4
+%define upstream_name	 libxml-perl
+%define upstream_version 0.08
+
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
 Summary:	Various perl modules and script for working with XML
-Name:		perl-%{module}
-Version:	%{version}
-Release:	%{release}
 License:	Artistic
 Group:		Development/Perl
-Source0:	%{module}-%{version}.tar.bz2
 Url:		http://www.cpan.org
-BuildRoot:	%{_tmppath}/%{name}-buildroot/
-Requires:	perl perl-XML-Parser
-BuildRequires:	perl-devel perl-XML-Parser
+Source0:	%{upstream_name}-%{upstream_version}.tar.bz2
+
+BuildRequires:	perl-XML-Parser
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
+Requires:	perl-XML-Parser
 
 %description
-The %{module} perl module is a collection of smaller Perl modules, scripts,
+The %{upstream_name} perl module is a collection of smaller Perl modules, scripts,
 and documents for working with XML in Perl.  libxml-perl software works
 in combination with XML::Parser, PerlSAX, XML::DOM, XML::Grove and others. 
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -43,5 +44,3 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/Data/*
 %{perl_vendorlib}/XML/*
 %{_mandir}/*/*
-
-
