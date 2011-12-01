@@ -32,10 +32,10 @@ make
 make test
 
 %clean 
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 
 %files
