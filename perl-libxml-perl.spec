@@ -4,7 +4,7 @@
 Summary:	Various perl modules and script for working with XML
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	15
+Release:	16
 License:	Artistic
 Group:		Development/Perl
 Url:		http://www.cpan.org
