@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{modver}
 Release:	18
 License:	Artistic
 Group:		Development/Perl
-Url:		http://www.cpan.org
+Url:		https://www.cpan.org
 Source0:	%{modname}-%{modver}.tar.bz2
 BuildArch:	noarch
 BuildRequires:	perl-XML-Parser
