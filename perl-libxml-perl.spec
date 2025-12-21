@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://www.cpan.org
 Source0:	%{modname}-%{modver}.tar.bz2
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl-XML-Parser
 BuildRequires:	perl-devel
 Requires:	perl-XML-Parser
