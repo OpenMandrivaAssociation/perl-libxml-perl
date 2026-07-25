@@ -3,12 +3,12 @@
 
 Summary:	Various perl modules and script for working with XML
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	18
+Version:	%{modver}
+Release:	19
 License:	Artistic
 Group:		Development/Perl
-Url:		https://www.cpan.org
-Source0:	%{modname}-%{modver}.tar.bz2
+Url:		https://metacpan.org/dist/libxml-perl
+Source0:	https://cpan.metacpan.org/authors/id/K/KM/KMACLEOD/libxml-perl-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-XML-Parser
